@@ -1,0 +1,20 @@
+version : 0.2
+
+phases:
+    build:
+      commands:
+         - echo Build started on 'date'
+         - mvn clean compile package
+         
+    post_build:
+      commands:  
+          -echo Build completed on 'date'
+         
+artifacts:
+  files:
+     - appspec.yml
+     - target/audit-management-authentication.war
+     - scripts/*
+     
+    
+  discard-paths: yes
