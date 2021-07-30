@@ -1,0 +1,43 @@
+complete:
+  fail: Process Completed - Failure
+  success: Process Completed - Success
+feign:
+  exp: Feign Proxy Exception Caught
+  'null': Feign Proxy returned Null Object
+fos:
+  auth: http://localhost:8090/
+  checklist: http://localhost:9120/
+  severity: http://localhost:9092/
+logging:
+  level:
+    org:
+      springframework:
+        context: DEBUG
+        web: DEBUG
+server:
+  port: 9090
+spring:
+  mvc:
+    view:
+      prefix: /WEB-INF/jsp/
+      suffix: .jsp
+string:
+  invalid:
+    cred: Invalid Credentials either username or password invalid
+  'null': Oops! Something went wrong
+  packdel:
+    down: Packaging and Delivery Service Down!
+  pay:
+    cred: 'Payment Credentials{}:'
+  payser:
+    down: Payment Service Down!
+  req: 'Request{}:'
+  res: 'ResponseEntity{}:'
+  token:
+    exp: Token Expired! login again
+  valfail: Validation Failed
+valcheck:
+  fail: End checkTokenValidity fail
+  success: End checkTokenValidity success
+  
+
