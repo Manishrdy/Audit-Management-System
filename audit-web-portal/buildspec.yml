@@ -13,7 +13,7 @@ phases:
 artifacts:
   files:
      - appspec.yml
-     - target/audit-web-portal.jar
+     - target/audit-web-portal.war
      - scripts/*
      
     
